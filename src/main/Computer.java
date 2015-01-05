@@ -4,14 +4,14 @@ import java.util.ArrayList;
 
 public class Computer {
 	
-	private ArrayList<Observable> observers = new ArrayList<Observable>();
+	private ArrayList<IObservable> observers = new ArrayList<IObservable>();
 	
-	public void registerObserver(Observable o){
+	public void registerObserver(IObservable o){
 		observers.add(o);
 	}
 	
 	public void notifyObservers(String message){
-		for(Observable o : observers){
+		for(IObservable o : observers){
 			o.notifyMe(message);
 		}
 	}

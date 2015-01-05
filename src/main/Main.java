@@ -21,7 +21,7 @@ public class Main {
 		frame.add(label);
 		configureFrame(frame);
 		
-		Observable gui = new GuiObserver(label);
+		IObservable gui = new GuiObserver(label);
 		Computer c = new Computer();
 		
 		c.registerObserver(gui);

@@ -1,6 +1,6 @@
 package main;
 
-public interface Observable {
+public interface IObservable {
 	
 	public void notifyMe(String message);
 

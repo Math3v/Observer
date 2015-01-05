@@ -2,7 +2,7 @@ package main;
 
 import javax.swing.JLabel;
 
-public class GuiObserver implements Observable {
+public class GuiObserver implements IObservable {
 
 	private JLabel label;
 	
